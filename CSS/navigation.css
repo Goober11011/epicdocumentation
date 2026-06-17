@@ -1,0 +1,38 @@
+.navbar {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	background-color: #222;
+	padding: 12px;
+}
+.navbar a,
+.drop-button{
+	color: white;
+	text-decoration: none;
+	background: none;
+	border: none;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.dropdown{
+	position: relative;
+}
+
+.drop-menu {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: #333;
+	min-width: 180px;
+}
+
+.drop-menu a {
+	display: block;
+	padding: 10px;
+}
+
+.dropdown:hover .drop-menu {
+	display: block;
+}
