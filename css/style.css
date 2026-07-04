@@ -1,13 +1,16 @@
 body {
 	background-color: #202020;
 	color: white;
-	font-family: Optima;
+	margin: 0;
 }
 
-h1 {
-	color: cyan;
+h1, h2 {
+	color: white;
+	padding: 20px;
+	margin-left: 300px;
 }
 
 a {
-	color: orange;
+	color : white;
+	text-decoration: none;
 }
