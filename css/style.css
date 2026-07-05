@@ -7,7 +7,13 @@ body {
 h1, h2 {
 	color: white;
 	padding: 20px;
-	margin-left: 300px;
+	margin-left: 250px;
+}
+
+p {
+	color: white;
+	padding: 20px;
+	margin-left: 250px;
 }
 
 a {

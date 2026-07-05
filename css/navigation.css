@@ -23,19 +23,19 @@
 	display: block;
 }
 
-ul {
+.sidebar ul{
 	position: fixed;
-	list-style-type: none;
 	left: 0;
 	top: 52px;
 	margin: 0;
 	padding: 0;
 	width: 200px;
 	background-color: #f1f1f1;
-	overflow-y: auto
+	list-style-type: none;
+	overflow-y: auto;
 }
 
-li a {
+.sidebar li a{
 	display: block;
 	color: black;
 	padding: 8px 16px;
@@ -43,12 +43,7 @@ li a {
 	font-size: 16px;
 }
 
-li a:hover {
-	background-color: #555555;
-	color: white;
-}
-
-li:hover {
+.sidebar li:hover {
 	background-color: #555555;
 	color: white;
 }
