@@ -5,7 +5,10 @@
 	background-color: orange;
 	padding: 12px;
 }
-.navbar a,
+.navbar a {
+	color: white;
+	text-decoration: none;
+}
 
 .nav-logo {
 	background: none;
@@ -24,7 +27,7 @@
 }
 
 .sidebar ul{
-	position: fixed;
+	position: absolute;
 	left: 0;
 	top: 52px;
 	margin: 0;
@@ -32,7 +35,14 @@
 	width: 200px;
 	background-color: #f1f1f1;
 	list-style-type: none;
-	overflow-y: auto;
+}
+
+.sidebar li span{
+	display: block;
+	color: black;
+	padding: 8px;
+	text-decoration: none;
+	font-size: 16px;
 }
 
 .sidebar li a{
@@ -43,7 +53,7 @@
 	font-size: 16px;
 }
 
-.sidebar li:hover {
+.sidebar li a:hover {
 	background-color: #555555;
 	color: white;
 }
@@ -64,7 +74,7 @@
 .drop-menu {
 	align-items: center;
 	display: none;
-	position: absolute;
+	position: relative;
 	z-index: 10;
 	background-color: #333;
 	border: 1px solid black;

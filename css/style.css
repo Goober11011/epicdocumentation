@@ -4,19 +4,22 @@ body {
 	margin: 0;
 }
 
-h1, h2 {
+main {
 	color: white;
 	padding: 20px;
 	margin-left: 250px;
+	
+}
+
+.indent{
+	padding-left: 40px;
+}
+
+.list {
+	list-style-type: none;
+	padding-left: 40px;
 }
 
 p {
-	color: white;
-	padding: 20px;
-	margin-left: 250px;
-}
-
-a {
-	color : white;
-	text-decoration: none;
+	padding-left: 20px;
 }
