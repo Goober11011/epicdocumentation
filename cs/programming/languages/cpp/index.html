@@ -36,8 +36,16 @@
 
 			<h1>Basics and Common Mistakes</h1>
 			<h2>Indexing</h2>
+			<p>C++ Indexes starting at 0. If I have an character array name[10] Which has John inside it the J in John will be at 0. So if I wanted to output o in John I would do:</p>
+			<p class="indent">cout &lt;&lt; name[1];</p>
+			<p>Output:</p>
+			<p class="indent">o</p>
 
 			<h2>Comparing Floating-Points</h2>
+			<p>Floating points are any decimal number. You don't want to compare floating points directly because the way the numbers are held are inprecise<br>Do NOT do:</p>
+			<p class="indent">x == 0.00011112;</p>
+			<p>Instead do:</p>
+			<p class="indent">x &lt; 0.00011112;<br><br>OR<br><br>x &gt; 0.00011112;</p>
 		</main>
 
 	</body>
