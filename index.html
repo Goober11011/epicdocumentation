@@ -15,6 +15,8 @@
 
 			<a class="nav-title" href="index.html" >Home</a>
 
+			<button id="edit-button">Edit Website</button>:
+
 		</nav>
 		<!--End of Navigation Bar-->
 
@@ -28,8 +30,42 @@
 			<!-- End of sidebar-->
 
 		<main>
-			<h1>This is my documentation website</h1>
-			<p>This is my documentation</p>
+				  <!-- Start of Editor Panel-->
+				<div id="editor-panel" hidden>
+					  <h2>Editor Login</h2>
+
+					  <form id="login-form">
+								 <label for="password">Password:</label>
+								 <input
+													  id="password"
+													  type="password"
+													  required
+													  >
+								<button type="submit">Enter</button>
+					</form>
+					<p id="login-message"></p>
+			</div>
+			<!-- End of editor panel -->
+			<!-- Start of editor mode -->
+			<div id="editor" hidden>
+					  <h2>Edit Website</h2>
+
+					  <label for="heading-input">Main heading:</label>
+					  <input id="heading-input" type="text">
+					  
+					  <label for="text-input">Main text:</label>
+					  <textarea id="text-input"></textarea>
+
+					  <button id="save-button">Save Changes</button>
+					  <button id="logout-button">Exit Edit Mode</button>
+			</div>
+
+			<!-- End of Editor Mode -->
+			<h1 id="main-heading">This is my documentation website</h1>
+			<p id="main-text">This is my documentation</p>
 		</main>
+
+		<script src="js/editor.js"></script>
+
 	</body>
 </html>
