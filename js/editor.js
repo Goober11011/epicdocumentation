@@ -25,18 +25,12 @@ const savedHeading = loadContent("mainHeading");
 const savedText = loadContent("mainText");
 /*end of const variables*/
 
-
-
-
-if (savedHeading !== null) {
-		  mainHeading.textContent = savedHeading;
-}
-
-if (savedHeading !== null) {
-		  mainText.textContent = savedText;
-}
-
-let editMode = false;
+/*Objects (Structs for your cpp mind)*/
+const page = {
+		  title: mainHeading.textContent,
+		  text: mainText.textContent
+};
+/*End of Objects*/
 
 function saveContent(key, value) {
 		  localStorage.setItem(key, value);
@@ -46,10 +40,23 @@ function loadContent(key) {
 		  return localStorage.getItem(key);
 }
 
-function loadEditorContent() {
-		  headingInput.value = mainHeading.textContent;
-		  textInput.value = mainText.textContent;
+if (savedHeading !== null) {
+		  page.title = savedHeading;
 }
+
+if (savedText !== null) {
+		  page.text = savedText;
+}
+
+mainHeading.textContent = page.title;
+mainText.textContent = page.text;
+
+function loadEditorContent() {
+		  headingInput.value = page.title;
+		  textInput.value = page.text;
+}
+
+let editMode = false;
 
 editButton.addEventListener("click", function () {
 		  if (editorPanel.hidden === true){
@@ -84,8 +91,11 @@ loginForm.addEventListener("submit", function (event) {
 
 
 saveButton.addEventListener("click", function () {
-		  mainHeading.textContent = headingInput.value;
-		  mainText.textContent = textInput.value;
+		  page.title = headingInput.value;
+		  page.text = textInput.value;
+
+		  mainHeading.textContent = page.title;
+		  mainText.textContent = page.title;
 
 		  saveContent("mainHeading", headingInput.value);
 		  saveContent("mainText", textInput.value);
