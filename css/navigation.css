@@ -1,3 +1,4 @@
+/*Navbar start*/
 .navbar {
 	position: fixed;
 	width: 100%;
@@ -27,76 +28,64 @@
 	height: 28px;
 	display: block;
 }
+/*Navbar end*/
+
+/*Sidebar start*/
+.sidebar {
+	white-space: normal;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	position: fixed;
+	top: 52px;
+	width: 200px;
+	height: 100vh;
+	overflow-y: auto;
+	box-sizing: border-box;
+}
 
 .sidebar ul{
-	position: fixed;
-	left: 0;
-	top: 52px;
+	background-color: #f1f1f1;
 	margin: 0;
 	padding: 0;
-	width: 200px;
-	background-color: #f1f1f1;
-	list-style-type: none;
+	list-style: none;
 }
 
-.sidebar li span{
+.sidebar-children {
+	padding-left: 5px !important;
+}
+
+.sidebar-folder {
+	width: 100%;
+	padding: 8px;
+	border: none;
+	background: none;
+	text-align: left;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.sidebar-folder:hover {
+	background: #ddd;
+}
+
+.sidebar-folder::before {
+	content: "->";
+	display: inline-block;
+	font-size: 10px;
+}
+
+.sidebar-folder.open::before {
+	transform: rotate(90deg);
+}
+
+.sidebar-page {
 	display: block;
-	color: black;
 	padding: 8px;
 	text-decoration: none;
-	font-size: 16px;
 }
 
-.sidebar li a{
-	display: block;
-	color: black;
-	padding: 8px 16px;
-	text-decoration: none;
-	font-size: 16px;
+.sidebar-page:hover {
+	background: #ddd;
 }
 
-.sidebar li a:hover {
-	background-color: #555555;
-	color: white;
-}
-
-.drop-button{
-	color: black;
-	text-decoration: none;
-	background: none;
-	padding: 8px 16px;
-	border: none;
-	font-size: 16px;
-}
-
-.dropdown{
-	position: relative;
-}
-
-.drop-menu {
-	align-items: center;
-	display: none;
-	position: relative;
-	z-index: 10;
-	background-color: #333;
-	border: 1px solid black;
-}
-
-.drop-menu a {
-	display: block;
-	padding: 0;
-}
-
-.dropdown:hover > .drop-menu {
-	display: block;
-}
-
-.navbar > .dropdown > .drop-menu {
-	top: 100%;
-	left: 0;
-}
-
-.drop-menu .dropdown > .drop-menu {
-	top: 0;
-	left: 100%;
-}
+/*Sidebar end*/
