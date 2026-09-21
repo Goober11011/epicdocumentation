@@ -1,7 +1,7 @@
 [
   {
     "title": "C++  Documentation",
-    "path": "cs/programming/languages/cpp/index.html"
+    "path": "cs/programming/languages/cpp/cpp.html"
   },
   {
     "title": "Operators and Variables",
@@ -20,12 +20,8 @@
     "path": "cs/programming/languages/cpp/standlib/iostream.html"
   },
   {
-    "title": "Programming Languages",
-    "path": "cs/programming/languages/index.html"
-  },
-  {
     "title": "Java",
-    "path": "cs/programming/languages/java/index.html"
+    "path": "cs/programming/languages/java/java.html"
   },
   {
     "title": "Home",

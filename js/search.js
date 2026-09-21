@@ -24,7 +24,7 @@ async function searchPagesSetup() {
 		matchingPages.forEach(page => {
 			const link = document.createElement("a");
 
-			link.href = page.path;
+			link.href = "/" + page.path;
 			link.textContent = page.title;
 		
 			searchResults.appendChild(link);
