@@ -1,0 +1,34 @@
+[
+  {
+    "title": "C++  Documentation",
+    "path": "cs/programming/languages/cpp/index.html"
+  },
+  {
+    "title": "Operators and Variables",
+    "path": "cs/programming/languages/cpp/langfund/operatorsvariables.html"
+  },
+  {
+    "title": "Pointers and References",
+    "path": "cs/programming/languages/cpp/langfund/pointersreferences.html"
+  },
+  {
+    "title": "Program Structure",
+    "path": "cs/programming/languages/cpp/langfund/programstruct.html"
+  },
+  {
+    "title": "Output Streams Library",
+    "path": "cs/programming/languages/cpp/standlib/iostream.html"
+  },
+  {
+    "title": "Programming Languages",
+    "path": "cs/programming/languages/index.html"
+  },
+  {
+    "title": "Java",
+    "path": "cs/programming/languages/java/index.html"
+  },
+  {
+    "title": "Home",
+    "path": "index.html"
+  }
+]

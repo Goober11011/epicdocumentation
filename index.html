@@ -1,34 +1,34 @@
 <!DOCTYPE html>
-<html lang="en-US"><head>
+<html lang="en-US">
+	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width">
-		<title>Documentation Website Test</title>
+		<title>Home</title>
 		<link rel="stylesheet" href="/css/style.css">
 		<link rel="stylesheet" href="/css/navigation.css">
 	</head>
 	<body>
 
-		<div id="navbar-container"></div>
-		<div id="sidebar-container"></div>
+		<section class="search searchhome">
+			<h1>Search Documentation</h1>
 
-		<main>
-			<section class="search">
-				<h2>Search Documentation</h2>
+			<div class="searchbox">
 
-				<input type="search" id="search-input" placeholder="Search Pages..." autocomplete="off">
+				<input type="search" id="search-input" placeholder="Search Pages...">
 
 				<div id="search-results"></div>
-			</section>
+			</div>
+		</section>
 
-			<h1 id="main-heading">This is my epic documentation website</h1>
-			<p id="main-text">This is my documentation</p>
+		<main>
+
+			<!--<h1 id="main-heading">This is my epic documentation website</h1>
+			<p id="main-text">This is my documentation</p>-->
 
 		</main>
 
 		<script src="/js/oneko.js" data-cat="/gifs/oneko.gif"></script>
 		<script src="/js/search.js"></script>
-		<script src="/js/navbar.js"></script>
-		<script src="/js/sidebar.js"></script>
 
 	</body>
 </html>

@@ -1,12 +1,10 @@
 /*Navbar start*/
 .navbar {
-	position: fixed;
-	width: 100%;
 	display: flex;
 	align-items: center;
 	gap: 16px;
 	background-color: orange;
-	padding: 12px;
+	padding: 15px 0px 15px 0px;
 }
 .navbar a {
 	color: white;
